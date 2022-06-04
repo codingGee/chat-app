@@ -1,0 +1,4 @@
+git push -u origin main
+ pip freeze > requirements.txt
+ python manage.py makemigrations chat
+ python manage.py runserver

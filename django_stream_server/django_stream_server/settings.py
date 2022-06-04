@@ -1,6 +1,9 @@
 
 from pathlib import Path
 
+STREAM_API_KEY = 'zugtx437rr3y'
+STREAM_API_SECRET = 'vbnj92sr7ye5cye9s2drdrw47zd5fp6zs82v4sftra86pqsse94964g3hacapdwn'
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,6 +23,7 @@ ALLOWED_HOSTS = [
     '0.0.0.0'
 ]
 
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -32,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     
+    # third part 
+    'corsheaders',    
     # local app 
     'chat',
 ]
